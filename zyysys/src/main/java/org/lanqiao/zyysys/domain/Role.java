@@ -1,0 +1,64 @@
+package org.lanqiao.zyysys.domain;
+
+import java.io.Serializable;
+import java.util.Date;
+import lombok.Data;
+
+/**
+ * 角色表
+ * @TableName role
+ */
+@Data
+public class Role implements Serializable {
+    /**
+     * 自增id
+     */
+    private Integer itemid;
+
+    /**
+     * 唯一标识UUID
+     */
+    private String itemcode;
+
+    /**
+     * 角色名称
+     */
+    private String roleName;
+
+    /**
+     * 角色说明
+     */
+    private String roleDescription;
+
+    /**
+     * 应用id
+     */
+    private String appCode;
+
+    /**
+     * 类型（0：普通，1：管理员）
+     */
+    private Integer roleType;
+
+    /**
+     * 
+     */
+    private String creater;
+
+    /**
+     * 
+     */
+    private Date itemcreateat;
+
+    /**
+     * 
+     */
+    private String updater;
+
+    /**
+     * 
+     */
+    private Date itemupdateat;
+
+    private static final long serialVersionUID = 1L;
+}
