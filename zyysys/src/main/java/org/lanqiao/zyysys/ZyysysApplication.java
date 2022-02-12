@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan(basePackages = "org.lanqiao.zyysys.dao")
+@MapperScan(basePackages = "org.lanqiao.zyysys.mapper")
 public class ZyysysApplication {
 
     public static void main(String[] args) {

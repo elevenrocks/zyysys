@@ -2,13 +2,18 @@ package org.lanqiao.zyysys.domain;
 
 import java.io.Serializable;
 import java.util.Date;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 加工企业在售药材、种植园在售药材记录表
  * @TableName tb_industrial_develop_med_mat
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class IndustrialDevelopMedMat implements Serializable {
     /**
      * 自增id

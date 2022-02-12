@@ -2,13 +2,18 @@ package org.lanqiao.zyysys.domain;
 
 import java.io.Serializable;
 import java.util.Date;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 历史名方数据记录表
  * @TableName tb_culpro_fam_pre
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class CulproFamPre implements Serializable {
     /**
      * 自增id

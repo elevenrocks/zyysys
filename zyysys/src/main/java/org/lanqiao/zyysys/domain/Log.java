@@ -2,13 +2,18 @@ package org.lanqiao.zyysys.domain;
 
 import java.io.Serializable;
 import java.util.Date;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 日志记录表
  * @TableName log
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Log implements Serializable {
     /**
      * 

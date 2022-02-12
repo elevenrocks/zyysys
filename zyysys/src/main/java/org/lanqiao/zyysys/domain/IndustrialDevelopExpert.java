@@ -2,13 +2,18 @@ package org.lanqiao.zyysys.domain;
 
 import java.io.Serializable;
 import java.util.Date;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 专家信息数据记录表
  * @TableName tb_industrial_develop_expert
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class IndustrialDevelopExpert implements Serializable {
     /**
      * 自增id

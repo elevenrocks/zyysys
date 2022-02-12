@@ -2,13 +2,18 @@ package org.lanqiao.zyysys.domain;
 
 import java.io.Serializable;
 import java.util.Date;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 销售企业、制药企业在售药品数据记录表
  * @TableName tb_industrial_develop_sale_drug
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class IndustrialDevelopSaleDrug implements Serializable {
     /**
      * 自增id

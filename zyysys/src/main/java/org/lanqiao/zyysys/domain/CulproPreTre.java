@@ -2,13 +2,18 @@ package org.lanqiao.zyysys.domain;
 
 import java.io.Serializable;
 import java.util.Date;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 治未病理念模块数据记录表
  * @TableName tb_culpro_pre_tre
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class CulproPreTre implements Serializable {
     /**
      * 自增id

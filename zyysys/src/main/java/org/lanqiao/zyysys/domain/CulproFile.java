@@ -2,13 +2,18 @@ package org.lanqiao.zyysys.domain;
 
 import java.io.Serializable;
 import java.util.Date;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 文件上传记录表
  * @TableName tb_culpro_file
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class CulproFile implements Serializable {
     /**
      * 自增id

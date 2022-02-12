@@ -2,13 +2,18 @@ package org.lanqiao.zyysys.domain;
 
 import java.io.Serializable;
 import java.util.Date;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 字典详情表
  * @TableName dictitem
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Dictitem implements Serializable {
     /**
      * 

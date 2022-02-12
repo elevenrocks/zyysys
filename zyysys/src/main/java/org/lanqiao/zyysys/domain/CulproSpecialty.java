@@ -2,13 +2,18 @@ package org.lanqiao.zyysys.domain;
 
 import java.io.Serializable;
 import java.util.Date;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 专科信息记录表
  * @TableName tb_culpro_specialty
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class CulproSpecialty implements Serializable {
     /**
      * 自增id

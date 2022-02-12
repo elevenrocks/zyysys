@@ -37,14 +37,14 @@
         CITYID,TYPE,PORTRAIT
     </sql>
 
-    <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer"  resultMap="BaseResultMap">
         select
         <include refid="Base_Column_List" />
         from user
-        where  itemID = #{itemid,jdbcType=INTEGER} AND itemCode = #{itemcode,jdbcType=CHAR} 
+        where  itemID = #{itemid,jdbcType=INTEGER}
     </select>
 
-    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
         delete from user
         where  itemID = #{itemid,jdbcType=INTEGER} AND itemCode = #{itemcode,jdbcType=CHAR} 
     </delete>
@@ -116,6 +116,12 @@
                 <if test="portrait != null"> #{portrait,jdbcType=BLOB},</if>
         </trim>
     </insert>
+
+    <!--测试-->
+    <select id="selectByUsername" parameterType="string" resultMap="BaseResultMap">
+        select * from user where USERNAME=#{username}
+    </select>
+
     <update id="updateByPrimaryKeySelective" parameterType="org.lanqiao.zyysys.domain.User">
         update user
         <set>

@@ -2,13 +2,18 @@ package org.lanqiao.zyysys.domain;
 
 import java.io.Serializable;
 import java.util.Date;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 医院和专科关联关系表
  * @TableName tb_culpro_hosp_specialty_ref
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class CulproHospSpecialtyRef implements Serializable {
     /**
      * 自增id

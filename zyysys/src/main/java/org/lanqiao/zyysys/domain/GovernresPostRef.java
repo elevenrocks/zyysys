@@ -2,13 +2,18 @@ package org.lanqiao.zyysys.domain;
 
 import java.io.Serializable;
 import java.util.Date;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 发文、内部会签关联关系表
  * @TableName tb_governres_post_ref
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class GovernresPostRef implements Serializable {
     /**
      * 自增id

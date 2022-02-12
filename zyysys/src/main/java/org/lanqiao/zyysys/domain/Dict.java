@@ -2,7 +2,10 @@ package org.lanqiao.zyysys.domain;
 
 import java.io.Serializable;
 import java.util.Date;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 字典表类型
@@ -10,6 +13,8 @@ import lombok.Data;
  * @TableName dict
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Dict implements Serializable {
     /**
      * 

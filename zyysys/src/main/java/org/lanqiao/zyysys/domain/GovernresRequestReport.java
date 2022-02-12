@@ -2,13 +2,18 @@ package org.lanqiao.zyysys.domain;
 
 import java.io.Serializable;
 import java.util.Date;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 请示报告记录表
  * @TableName tb_governres_request_report
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class GovernresRequestReport implements Serializable {
     /**
      * 自增id

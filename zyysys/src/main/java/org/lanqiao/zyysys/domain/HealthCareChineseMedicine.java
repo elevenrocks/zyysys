@@ -2,13 +2,18 @@ package org.lanqiao.zyysys.domain;
 
 import java.io.Serializable;
 import java.util.Date;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 中药常识数据记录表
  * @TableName tb_health_care_chinese_medicine
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class HealthCareChineseMedicine implements Serializable {
     /**
      * 自增id

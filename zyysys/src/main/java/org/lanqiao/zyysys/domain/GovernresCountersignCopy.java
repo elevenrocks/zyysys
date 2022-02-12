@@ -2,13 +2,18 @@ package org.lanqiao.zyysys.domain;
 
 import java.io.Serializable;
 import java.util.Date;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 会签记录表
  * @TableName tb_governres_countersign_copy
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class GovernresCountersignCopy implements Serializable {
     /**
      * 自增id

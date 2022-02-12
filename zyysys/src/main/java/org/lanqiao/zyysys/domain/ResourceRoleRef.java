@@ -2,13 +2,18 @@ package org.lanqiao.zyysys.domain;
 
 import java.io.Serializable;
 import java.util.Date;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 权限--角色  关联表
  * @TableName resource_role_ref
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class ResourceRoleRef implements Serializable {
     /**
      * 自增id
